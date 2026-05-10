@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Improvement -->
+    <meta name="description"
+        content="Temple Album showcasing temples from around the world including Buenos Aires, Rome, Salt Lake, and more.">
+
+    <title>Temple Album | Responsive Gallery of LDS Temples</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+
+    <!-- JS -->
+    <script src="scripts/temples.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h2>Temple Album</h2>
+
+        <button id="menuBtn">☰</button>
+
+        <nav id="navMenu">
+            <a href="#" id="home">Home</a>
+            <a href="#" id="old">Old</a>
+            <a href="#" id="new">New</a>
+            <a href="#" id="large">Large</a>
+            <a href="#" id="small">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Temple Gallery</h1>
+
+        <div class="gallery">
+
+            <figure data-year="old" data-size="large">
+                <img src="images/temple1.jpg" alt="Buenos Aires Temple" loading="lazy">
+                <figcaption>Buenos Aires Temple</figcaption>
+            </figure>
+
+            <figure data-year="new" data-size="small">
+                <img src="images/temple2.jpg" alt="Cordoba Temple" loading="lazy">
+                <figcaption>Cordoba Temple</figcaption>
+            </figure>
+
+            <figure data-year="new" data-size="large">
+                <img src="images/temple3.jpg" alt="Barranquilla Temple" loading="lazy">
+                <figcaption>Barranquilla Temple</figcaption>
+            </figure>
+
+            <figure data-year="old" data-size="large">
+                <img src="images/temple4.jpg" alt="Rome Temple" loading="lazy">
+                <figcaption>Rome Temple</figcaption>
+            </figure>
+
+            <figure data-year="old" data-size="large">
+                <img src="images/temple5.jpg" alt="Salt Lake Temple" loading="lazy">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+
+            <figure data-year="old" data-size="small">
+                <img src="images/temple6.jpg" alt="Chicago Temple" loading="lazy">
+                <figcaption>Chicago Temple</figcaption>
+            </figure>
+
+            <figure data-year="new" data-size="large">
+                <img src="images/temple7.jpg" alt="Arequipa Temple" loading="lazy">
+                <figcaption>Arequipa Temple</figcaption>
+            </figure>
+
+            <figure data-year="new" data-size="small">
+                <img src="images/temple8.jpg" alt="Provo City Temple" loading="lazy">
+                <figcaption>Provo City Temple</figcaption>
+            </figure>
+
+            <figure data-year="old" data-size="large">
+                <img src="images/temple9.jpg" alt="Oakland California Temple" loading="lazy">
+                <figcaption>Oakland California Temple</figcaption>
+            </figure>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© <span id="year"></span> | Franco Almada | Argentina</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>
