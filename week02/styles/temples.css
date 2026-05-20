@@ -36,6 +36,11 @@ nav a:hover {
     border-radius: 5px;
 }
 
+nav a:focus {
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+
 /* Active menu item */
 nav a.active {
     background-color: #f72585;

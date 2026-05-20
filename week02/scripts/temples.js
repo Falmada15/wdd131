@@ -10,9 +10,11 @@ menuBtn.addEventListener("click", () => {
     if (navMenu.style.display === "flex") {
         navMenu.style.display = "none";
         menuBtn.textContent = "☰";
+        menuBtn.setAttribute("aria-label", "Open navigation menu");
     } else {
         navMenu.style.display = "flex";
         menuBtn.textContent = "✖";
+        menuBtn.setAttribute("aria-label", "Close navigation menu");
     }
 });
 
