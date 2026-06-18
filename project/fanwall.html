@@ -1,10 +1,129 @@
-worldcup.html
-siteplan.html
-career.html
-fanwall.html
-index.html
-references.html
+<!DOCTYPE html>
+<html lang="en-US">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Fan Wall | Messi: The Last Dance</title>
 
+    <meta name="description"
+        content="Share your favorite Lionel Messi memory and see messages from fans around the world.">
 
+    <meta name="author" content="Franco Almada">
+
+    <link rel="stylesheet" href="styles/project.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <script src="scripts/project.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Messi: The Last Dance</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="career.html">Career</a>
+            <a href="worldcup.html">World Cup</a>
+            <a href="fanwall.html">Fan Wall</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="intro">
+
+            <h2>Fan Wall</h2>
+
+            <p>
+                Every football fan has a Messi memory.
+                Share yours and become part of this tribute.
+            </p>
+
+        </section>
+
+        <section>
+
+            <img src="images/messi-photo-13.jpg" alt="Argentina celebrating the World Cup" class="fan-banner"
+                loading="lazy">
+
+            <form id="fanForm" class="fan-form">
+
+                <label for="fanName">
+                    Name *
+                </label>
+
+                <input type="text" id="fanName" required>
+
+                <label for="country">
+                    Country *
+                </label>
+
+                <input type="text" id="country" required>
+
+                <label for="moment">
+                    Favorite Messi Moment *
+                </label>
+
+                <input type="text" id="moment" required>
+
+                <label for="message">
+                    Message *
+                </label>
+
+                <textarea id="message" rows="5" required></textarea>
+
+                <button type="submit" class="submit-btn">
+                    Share My Story
+                </button>
+
+            </form>
+
+        </section>
+
+        <section class="fan-wall-intro">
+
+            <h2>Messages From Fans Around The World</h2>
+
+            <p>
+                Every message shared here is stored locally in your browser,
+                creating a personal collection of memories celebrating Lionel Messi.
+            </p>
+
+        </section>
+
+        <section>
+
+            <div id="fanMessages"></div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            © <span id="year"></span> | Franco Almada | Argentina
+        </p>
+
+        <p>
+            <a href="references.html">References</a>
+        </p>
+
+        <p>
+            Last Modified:
+            <span id="lastModified"></span>
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
